@@ -1,0 +1,17 @@
+ALGORITHM checkpoint-algorithm
+VAR
+    txt : STRING := "keep it gangsta y'all keep it gangsta."
+    vowel : INTEGER := 0
+    words : INTEGER := 0
+    lgth : INTEGER := txt.length
+BEGIN
+    FOR i FROM 0 TO txt.length DO
+        SWITCH (txt[i]) DO
+            case " " : words := words + 1
+            case "a", "e", "i", "o", "u" "y" : vowel + 1
+        END_SWITCH
+    END_FOR
+    write(vowel)
+    write(words + 1)
+    write(txt.length)
+END
